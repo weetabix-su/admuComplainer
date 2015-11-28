@@ -3,24 +3,42 @@
     package="edu.ateneo.admucomplainer"
     android:versionCode="1"
     android:versionName="1.0" >
-
+	<!--PARSE PERMS -->
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Login"
+            android:name=".TheComplainer"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/title_activity_about_page" >
+        </activity>
+        <activity
+            android:name=".LoginMain"
+            android:label="@string/title_activity_login_main" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
         </activity>
     </application>
 

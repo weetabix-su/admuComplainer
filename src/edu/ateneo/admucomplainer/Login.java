@@ -29,4 +29,9 @@ public void SignUpClicked(View v)
 	startActivity(intent);
 
 }
+public void LoginClicked(View v)
+{
+	Intent intent = new Intent(getApplicationContext(), LoginMain.class);
+	startActivity(intent);
+}
 }

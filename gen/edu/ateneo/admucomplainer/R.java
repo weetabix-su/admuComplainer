@@ -9,6 +9,8 @@ package edu.ateneo.admucomplainer;
 
 public final class R {
     public static final class array {
+        public static final int inconvenience_rating=0x7f060002;
+        public static final int query_list=0x7f060001;
         public static final int schools_list=0x7f060000;
     }
     public static final class attr {
@@ -31,52 +33,83 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090000;
-        public static final int action_settings=0x7f09001b;
+        public static final int action_settings=0x7f090024;
         public static final int button1=0x7f090006;
         public static final int button2=0x7f090007;
         public static final int button3=0x7f090008;
-        public static final int buttons=0x7f09000d;
-        public static final int cancel=0x7f09001a;
-        public static final int checkBox1=0x7f09000c;
-        public static final int confirm=0x7f090015;
-        public static final int email=0x7f090013;
-        public static final int idNumber=0x7f090012;
+        public static final int buttons=0x7f09000f;
+        public static final int cancel=0x7f09001c;
+        public static final int checkBox1=0x7f09000e;
+        public static final int confirm=0x7f090017;
+        public static final int editText1=0x7f09001d;
+        public static final int editText2=0x7f09001e;
+        public static final int email=0x7f090015;
+        public static final int idNumber=0x7f090014;
         public static final int imageView1=0x7f090001;
-        public static final int nameFood=0x7f09000a;
-        public static final int password=0x7f09000b;
-        public static final int progressBar1=0x7f09000f;
-        public static final int progressBar4=0x7f090019;
-        public static final int register=0x7f090010;
-        public static final int save=0x7f090018;
+        public static final int listView1=0x7f09000a;
+        public static final int map=0x7f090013;
+        public static final int nameFood=0x7f09000c;
+        public static final int password=0x7f09000d;
+        public static final int progressBar1=0x7f090011;
+        public static final int progressBar4=0x7f09001b;
+        public static final int register=0x7f090012;
+        public static final int save=0x7f09001a;
         public static final int scrollView1=0x7f090004;
-        public static final int signIn=0x7f09000e;
-        public static final int spinner1=0x7f090017;
+        public static final int signIn=0x7f090010;
+        public static final int spinner1=0x7f090019;
         public static final int textView1=0x7f090002;
+        public static final int textView10=0x7f090022;
+        public static final int textView11=0x7f090023;
         public static final int textView2=0x7f090003;
         public static final int textView3=0x7f090005;
-        public static final int textView4=0x7f090014;
-        public static final int textView5=0x7f090011;
-        public static final int textView6=0x7f090016;
-        public static final int userName=0x7f090009;
+        public static final int textView4=0x7f090016;
+        public static final int textView5=0x7f090009;
+        public static final int textView6=0x7f090018;
+        public static final int textView7=0x7f09001f;
+        public static final int textView8=0x7f090020;
+        public static final int textView9=0x7f090021;
+        public static final int userName=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_about_page=0x7f030000;
-        public static final int activity_login=0x7f030001;
-        public static final int activity_login_main=0x7f030002;
-        public static final int activity_register=0x7f030003;
+        public static final int activity_admin_main=0x7f030001;
+        public static final int activity_login=0x7f030002;
+        public static final int activity_login_main=0x7f030003;
+        public static final int activity_map=0x7f030004;
+        public static final int activity_queue=0x7f030005;
+        public static final int activity_register=0x7f030006;
+        public static final int activity_submit=0x7f030007;
+        public static final int activity_user_main=0x7f030008;
+        public static final int activity_view=0x7f030009;
+        public static final int activity_zoom=0x7f03000a;
+        public static final int row=0x7f03000b;
     }
     public static final class menu {
         public static final int about_page=0x7f080000;
-        public static final int login_main=0x7f080001;
-        public static final int register=0x7f080002;
+        public static final int admin_main=0x7f080001;
+        public static final int login_main=0x7f080002;
+        public static final int map=0x7f080003;
+        public static final int queue=0x7f080004;
+        public static final int register=0x7f080005;
+        public static final int submit=0x7f080006;
+        public static final int user_main=0x7f080007;
+        public static final int view=0x7f080008;
+        public static final int zoom=0x7f080009;
     }
     public static final class string {
         public static final int action_settings=0x7f050003;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int title_activity_about_page=0x7f050002;
+        public static final int title_activity_admin_main=0x7f050007;
         public static final int title_activity_login_main=0x7f050004;
+        public static final int title_activity_map=0x7f05000c;
+        public static final int title_activity_queue=0x7f05000a;
         public static final int title_activity_register=0x7f050005;
+        public static final int title_activity_submit=0x7f050009;
+        public static final int title_activity_user_main=0x7f050006;
+        public static final int title_activity_view=0x7f050008;
+        public static final int title_activity_zoom=0x7f05000b;
     }
     public static final class style {
         /** 

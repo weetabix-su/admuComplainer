@@ -49,41 +49,38 @@ ArrayAdapter<CharSequence> adapter;
 		String confirmStr = confirm.getText().toString();
 		String schoolStr = school.getSelectedItem().toString();
 		
-		if(passwordStr != confirmStr)
+		if (!passwordStr.equals(confirmStr))
 		{
-			Toast toast = Toast.makeText(this, "Passwords do not match", Toast.LENGTH_LONG);
+			Toast toast = Toast.makeText(this, "Passwords do not match!", Toast.LENGTH_LONG);
 			toast.show();
 		}
 		
 		else{
-		
-		ParseUser user = new ParseUser();
-		user.setUsername(idNumberStr);
-		user.setPassword(passwordStr);
-		user.setEmail(emailStr);
-		
-		disableButtonsShowProgress();
-		user.signUpInBackground(new SignUpCallback() {
-		  public void done(ParseException e) 
-		  {
-		    if (e == null) 
-		    {
-		     //ayyyyy lmaaoooo
-		    	Toast.makeText(getApplicationContext(), "Registration successful.  You can now log in", Toast.LENGTH_LONG).show();
-		    	finish();
-		    } 
-		    else 
-		    {
-		     //app  dies Rip in peace Pupper
-		    	e.printStackTrace();
-		    	Toast.makeText(getApplicationContext(), "Unable to register: "+e.getMessage(), Toast.LENGTH_LONG).show();
-		    }
-		    
-		    enableButtonDisableProgress();
-		  }
-		});
-		
-		
+			ParseUser user = new ParseUser();
+			user.setUsername(idNumberStr);
+			user.setPassword(passwordStr);
+			user.setEmail(emailStr);
+			
+			disableButtonsShowProgress();
+			user.signUpInBackground(new SignUpCallback() {
+			  public void done(ParseException e) 
+			  {
+			    if (e == null) 
+			    {
+			     //ayyyyy lmaaoooo
+			    	Toast.makeText(getApplicationContext(), "Registration successful.  You can now log in", Toast.LENGTH_LONG).show();
+			    	finish();
+			    } 
+			    else 
+			    {
+			     //app  dies Rip in peace Pupper
+			    	e.printStackTrace();
+			    	Toast.makeText(getApplicationContext(), "Unable to register: "+e.getMessage(), Toast.LENGTH_LONG).show();
+			    }
+			    
+			    enableButtonDisableProgress();
+			  }
+			});
 		}
 	}
 	

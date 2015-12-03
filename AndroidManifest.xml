@@ -15,12 +15,13 @@
         android:targetSdkVersion="19" />
 
     <application
+        android:name=".TheComplainer"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".TheComplainer"
+            android:name=".Login"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

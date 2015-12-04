@@ -56,10 +56,18 @@ public class LoginMain extends Activity {
 			if (user != null) 
 				{
 				// Hooray! The user is logged in.
-				// NOTE: Intent below should lead us to complainer home screen
-				//Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
-				//startActivity(intent);
-				Toast.makeText(getApplicationContext(), "Sign in successful!\nNow fix me!", Toast.LENGTH_LONG).show();
+				// NOTE: Intent below should lead us to complainer home screen depending on access permissions (isAdmin)
+				Intent intent;
+				if (user.getBoolean("isAdmin"))
+				{
+					intent = new Intent(getApplicationContext(), AdminMain.class);
+				}
+				else
+				{
+					intent = new Intent(getApplicationContext(), UserMain.class);
+				}
+				startActivity(intent);
+				//Toast.makeText(getApplicationContext(), "Sign in successful!\nNow fix me!", Toast.LENGTH_LONG).show();
 				} 
 			else 
 				{

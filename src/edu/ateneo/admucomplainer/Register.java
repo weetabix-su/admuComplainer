@@ -60,6 +60,9 @@ ArrayAdapter<CharSequence> adapter;
 			user.setUsername(idNumberStr);
 			user.setPassword(passwordStr);
 			user.setEmail(emailStr);
+			user.put("idNumber", Integer.parseInt(idNumberStr));
+			user.put("school", schoolStr);
+			user.put("isAdmin", false);
 			
 			disableButtonsShowProgress();
 			user.signUpInBackground(new SignUpCallback() {

@@ -1,6 +1,7 @@
 package edu.ateneo.admucomplainer;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,5 +31,15 @@ public class AdminMain extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void viewC(View v){
+		Intent intent = new Intent(getApplicationContext(), View.class);
+		startActivity(intent);
+	}
+	
+	public void priorityQ(View v){
+		Intent intent = new Intent(getApplicationContext(), Queue.class);
+		startActivity(intent);
 	}
 }

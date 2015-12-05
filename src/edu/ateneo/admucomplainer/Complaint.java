@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
+import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 
 @ParseClassName("Complaint")
@@ -54,5 +55,18 @@ public class Complaint extends ParseObject {
 	{
 		return getParseFile("photo");
 	}
-		
+	public void setLoc(ParseGeoPoint l, String n)
+	{
+		put("location", l);
+		put("locationName", n);
+	}
+	public ParseGeoPoint getGeo()
+	{
+		return (ParseGeoPoint) get("location");
+	}
+	public String getLocName()
+	{
+		return getString("locationName");
+	}
+	//Note: createdBy should have its get/set functions
 }

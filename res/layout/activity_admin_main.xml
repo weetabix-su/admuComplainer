@@ -59,14 +59,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="View Priority Queue" />
+            android:text="View Priority Queue" 
+            android:onClick="priorityQ"/>
 
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="View Complaints" />
+            android:text="View Complaints"
+            android:onClick="viewC" />
     </LinearLayout>
 
 </LinearLayout>

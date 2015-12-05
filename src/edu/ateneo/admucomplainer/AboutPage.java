@@ -1,6 +1,7 @@
 package edu.ateneo.admucomplainer;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,5 +37,16 @@ public class AboutPage extends Activity {
 	{
 		finish();
 	}
-	
+	public void SignUpClicked(View v)
+	{
+		Intent intent = new Intent(getApplicationContext(), Register.class);
+		startActivity(intent);
+		finish();
+	}
+	public void LoginClicked(View v)
+	{
+		Intent intent = new Intent(getApplicationContext(), LoginMain.class);
+		startActivity(intent);
+		finish();
+	}
 }

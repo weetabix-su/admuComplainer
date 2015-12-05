@@ -21,7 +21,6 @@ public void AboutClicked(View v)
 {
 	Intent intent = new Intent(getApplicationContext(), AboutPage.class);
 	startActivity(intent);
-
 }
 public void SignUpClicked(View v)
 {

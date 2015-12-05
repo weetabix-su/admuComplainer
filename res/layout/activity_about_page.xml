@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="The Ateneo Complainer is a mobile app that seeks to provide a solution"
+                android:text="The Ateneo Complainer is a mobile app that provides students a channel to voice their complaints about the things they encounter in-campus.\n\nApp made by:\nKris Lizardo\nAngelo Barredo\n\nPre-Alpha Prototype made for CS150 Section A, 1st Semester 2015-2016, Ateneo de Manila University.\n\nContents gathered by this application are used for the sole purpose of application testing. Should there be any confidential information that needs to be removed, please send your requests to angelo.barredo@obf.ateneo.edu along with your ID number."
                 android:typeface="monospace" />
 
         </LinearLayout>
@@ -82,14 +82,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Login" />
+            android:text="Login"
+            android:onClick="LoginClicked"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.41"
-            android:text="Sign Up" />
+            android:text="Sign Up"
+            android:onClick="SignUpClicked"/>
 
     </LinearLayout>
 

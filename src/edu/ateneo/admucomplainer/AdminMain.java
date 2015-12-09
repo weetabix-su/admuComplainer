@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
 public class AdminMain extends Activity {
 
 	@Override
@@ -36,10 +36,12 @@ public class AdminMain extends Activity {
 	public void viewC(View v){
 		Intent intent = new Intent(getApplicationContext(), View.class);
 		startActivity(intent);
+		finish();
 	}
 	
 	public void priorityQ(View v){
 		Intent intent = new Intent(getApplicationContext(), Queue.class);
 		startActivity(intent);
+		finish();
 	}
 }

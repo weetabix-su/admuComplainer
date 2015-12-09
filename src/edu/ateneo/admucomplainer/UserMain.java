@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class UserMain extends Activity {
 
@@ -68,9 +69,11 @@ public class UserMain extends Activity {
 	public void SubmitClicked(View v){
 		Intent intent = new Intent(getApplicationContext(), Submit.class);
 		startActivity(intent);
+		finish();
 	}
 	public void ViewClicked(View v){
 		Intent intent = new Intent(getApplicationContext(), View.class);
 		startActivity(intent);
+		finish();
 	}
 }

@@ -32,5 +32,6 @@ public void LoginClicked(View v)
 {
 	Intent intent = new Intent(getApplicationContext(), LoginMain.class);
 	startActivity(intent);
+	finish();
 }
 }

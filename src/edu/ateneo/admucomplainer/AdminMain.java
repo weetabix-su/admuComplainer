@@ -34,7 +34,7 @@ public class AdminMain extends Activity {
 	}
 	
 	public void viewC(View v){
-		Intent intent = new Intent(getApplicationContext(), View.class);
+		Intent intent = new Intent(getApplicationContext(), ViewComplaints.class);
 		startActivity(intent);
 		finish();
 	}

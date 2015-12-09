@@ -11,6 +11,7 @@ public class View extends Activity {
 	
 Spinner sp1;
 ArrayAdapter<CharSequence> adapter;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

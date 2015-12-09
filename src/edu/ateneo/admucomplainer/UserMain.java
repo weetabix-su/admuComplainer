@@ -72,7 +72,7 @@ public class UserMain extends Activity {
 		finish();
 	}
 	public void ViewClicked(View v){
-		Intent intent = new Intent(getApplicationContext(), View.class);
+		Intent intent = new Intent(getApplicationContext(), ViewComplaints.class);
 		startActivity(intent);
 		finish();
 	}

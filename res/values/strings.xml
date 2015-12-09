@@ -34,5 +34,6 @@
     <string name="title_activity_queue">Queue</string>
     <string name="title_activity_zoom">Zoom</string>
     <string name="title_activity_map">Map</string>
+    <string name="title_activity_view_complaints">ViewComplaints</string>
 
 </resources>

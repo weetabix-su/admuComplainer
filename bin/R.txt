@@ -189,8 +189,9 @@ int layout activity_register 0x7f030006
 int layout activity_submit 0x7f030007
 int layout activity_user_main 0x7f030008
 int layout activity_view 0x7f030009
-int layout activity_zoom 0x7f03000a
-int layout row 0x7f03000b
+int layout activity_view_complaints 0x7f03000a
+int layout activity_zoom 0x7f03000b
+int layout row 0x7f03000c
 int menu about_page 0x7f0c0000
 int menu admin_main 0x7f0c0001
 int menu login_main 0x7f0c0002
@@ -200,7 +201,8 @@ int menu register 0x7f0c0005
 int menu submit 0x7f0c0006
 int menu user_main 0x7f0c0007
 int menu view 0x7f0c0008
-int menu zoom 0x7f0c0009
+int menu view_complaints 0x7f0c0009
+int menu zoom 0x7f0c000a
 int raw gtm_analytics 0x7f040000
 int string accept 0x7f060002
 int string action_settings 0x7f06002f
@@ -257,6 +259,7 @@ int string title_activity_register 0x7f060031
 int string title_activity_submit 0x7f060035
 int string title_activity_user_main 0x7f060032
 int string title_activity_view 0x7f060034
+int string title_activity_view_complaints 0x7f060039
 int string title_activity_zoom 0x7f060037
 int string wallet_buy_button_place_holder 0x7f06002b
 int style AppBaseTheme 0x7f050005

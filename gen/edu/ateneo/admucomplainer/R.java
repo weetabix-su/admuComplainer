@@ -595,8 +595,9 @@ containing a value of this type.
         public static final int activity_submit=0x7f030007;
         public static final int activity_user_main=0x7f030008;
         public static final int activity_view=0x7f030009;
-        public static final int activity_zoom=0x7f03000a;
-        public static final int row=0x7f03000b;
+        public static final int activity_view_complaints=0x7f03000a;
+        public static final int activity_zoom=0x7f03000b;
+        public static final int row=0x7f03000c;
     }
     public static final class menu {
         public static final int about_page=0x7f0c0000;
@@ -608,7 +609,8 @@ containing a value of this type.
         public static final int submit=0x7f0c0006;
         public static final int user_main=0x7f0c0007;
         public static final int view=0x7f0c0008;
-        public static final int zoom=0x7f0c0009;
+        public static final int view_complaints=0x7f0c0009;
+        public static final int zoom=0x7f0c000a;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f040000;
@@ -759,6 +761,7 @@ containing a value of this type.
         public static final int title_activity_submit=0x7f060035;
         public static final int title_activity_user_main=0x7f060032;
         public static final int title_activity_view=0x7f060034;
+        public static final int title_activity_view_complaints=0x7f060039;
         public static final int title_activity_zoom=0x7f060037;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
